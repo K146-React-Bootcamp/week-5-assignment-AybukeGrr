@@ -5,7 +5,6 @@ import "./index.css"
 function App() {
   const [number, setNumber] = useState(0);
   const [dark, setDark] = useState(false);
-  // const doubleNumber = slowFunction(number);
   const doubleNumber = useMemo(() => {
     return slowFunction(number);
   }, [number]);
